@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1222</width>
-    <height>624</height>
+    <height>570</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,10 +17,10 @@
    <widget class="QTableWidget" name="sepet_table">
     <property name="geometry">
      <rect>
-      <x>490</x>
+      <x>480</x>
       <y>280</y>
-      <width>721</width>
-      <height>281</height>
+      <width>731</width>
+      <height>231</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -66,9 +66,9 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>0</y>
+      <y>10</y>
       <width>461</width>
-      <height>561</height>
+      <height>501</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -140,67 +140,79 @@
        <x>130</x>
        <y>100</y>
        <width>121</width>
-       <height>181</height>
+       <height>191</height>
       </rect>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout_2">
       <item>
-       <widget class="QCheckBox" name="klasik_p_10">
+       <widget class="QCheckBox" name="ketcap_check">
         <property name="font">
          <font>
           <pointsize>10</pointsize>
          </font>
         </property>
         <property name="text">
-         <string>CheckBox</string>
+         <string>Ketçap</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QCheckBox" name="klasik_p_11">
+       <widget class="QCheckBox" name="mayonez_check">
         <property name="font">
          <font>
           <pointsize>10</pointsize>
          </font>
         </property>
         <property name="text">
-         <string>CheckBox</string>
+         <string>Mayonez</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QCheckBox" name="klasik_p_12">
+       <widget class="QCheckBox" name="hardal_check">
         <property name="font">
          <font>
           <pointsize>10</pointsize>
          </font>
         </property>
         <property name="text">
-         <string>CheckBox</string>
+         <string>Hardal</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QCheckBox" name="klasik_p_13">
+       <widget class="QCheckBox" name="ranch_check">
         <property name="font">
          <font>
           <pointsize>10</pointsize>
          </font>
         </property>
         <property name="text">
-         <string>CheckBox</string>
+         <string>Ranch Sos</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QCheckBox" name="klasik_p_14">
+       <widget class="QCheckBox" name="bbq_check">
         <property name="font">
          <font>
           <pointsize>10</pointsize>
          </font>
         </property>
         <property name="text">
-         <string>CheckBox</string>
+         <string>BBQ Sos</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="aci_sos_check">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Acı Sos</string>
         </property>
        </widget>
       </item>
@@ -209,7 +221,7 @@
     <widget class="QLabel" name="malzemeler_label_3">
      <property name="geometry">
       <rect>
-       <x>270</x>
+       <x>320</x>
        <y>70</y>
        <width>131</width>
        <height>21</height>
@@ -229,8 +241,8 @@
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>410</y>
-       <width>391</width>
+       <y>330</y>
+       <width>461</width>
        <height>101</height>
       </rect>
      </property>
@@ -251,7 +263,7 @@
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>380</y>
+       <y>300</y>
        <width>241</width>
        <height>21</height>
       </rect>
@@ -331,67 +343,79 @@
        <x>0</x>
        <y>100</y>
        <width>111</width>
-       <height>181</height>
+       <height>191</height>
       </rect>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout">
       <item>
-       <widget class="QCheckBox" name="klasik_p_5">
+       <widget class="QCheckBox" name="zeytin_check">
         <property name="font">
          <font>
           <pointsize>10</pointsize>
          </font>
         </property>
         <property name="text">
-         <string>CheckBox</string>
+         <string>Zeytin</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QCheckBox" name="klasik_p_6">
+       <widget class="QCheckBox" name="mantar_check">
         <property name="font">
          <font>
           <pointsize>10</pointsize>
          </font>
         </property>
         <property name="text">
-         <string>CheckBox</string>
+         <string>Mantar</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QCheckBox" name="klasik_p_7">
+       <widget class="QCheckBox" name="keci_peyniri_check">
         <property name="font">
          <font>
           <pointsize>10</pointsize>
          </font>
         </property>
         <property name="text">
-         <string>CheckBox</string>
+         <string>Keçi Peyniri</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QCheckBox" name="klasik_p_8">
+       <widget class="QCheckBox" name="et_check">
         <property name="font">
          <font>
           <pointsize>10</pointsize>
          </font>
         </property>
         <property name="text">
-         <string>CheckBox</string>
+         <string>Et</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QCheckBox" name="klasik_p_9">
+       <widget class="QCheckBox" name="sogan_check">
         <property name="font">
          <font>
           <pointsize>10</pointsize>
          </font>
         </property>
         <property name="text">
-         <string>CheckBox</string>
+         <string>Soğan</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="misir_check">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Mısır</string>
         </property>
        </widget>
       </item>
@@ -401,14 +425,14 @@
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>520</y>
-       <width>391</width>
-       <height>41</height>
+       <y>440</y>
+       <width>461</width>
+       <height>51</height>
       </rect>
      </property>
      <layout class="QHBoxLayout" name="horizontalLayout_2">
       <item>
-       <widget class="QPushButton" name="sepete_ekle">
+       <widget class="QPushButton" name="sepete_ekle_button">
         <property name="font">
          <font>
           <family>Times New Roman</family>
@@ -425,7 +449,7 @@
     <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
-       <x>260</x>
+       <x>310</x>
        <y>100</y>
        <width>71</width>
        <height>181</height>
@@ -512,7 +536,7 @@
     <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
-       <x>330</x>
+       <x>380</x>
        <y>100</y>
        <width>51</width>
        <height>191</height>
@@ -566,13 +590,79 @@
       </item>
      </layout>
     </widget>
+    <widget class="QWidget" name="layoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>100</y>
+       <width>51</width>
+       <height>191</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_7">
+      <item>
+       <widget class="QSpinBox" name="spinBox_ketcap_4">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QSpinBox" name="spinBox_mayonez_4">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QSpinBox" name="spinBox_hardal_4">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QSpinBox" name="spinBox_ranch_4">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QSpinBox" name="spinBox_bbq_4">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QSpinBox" name="spinBox_aci_sos_4">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
    </widget>
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>490</x>
+      <x>480</x>
       <y>230</y>
-      <width>721</width>
+      <width>731</width>
       <height>41</height>
      </rect>
     </property>
@@ -618,6 +708,22 @@
      </item>
     </layout>
    </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>10</y>
+      <width>731</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -625,11 +731,23 @@
      <x>0</x>
      <y>0</y>
      <width>1222</width>
-     <height>26</height>
+     <height>21</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuSipari_lerim">
+    <property name="title">
+     <string>Siparişlerim</string>
+    </property>
+    <addaction name="actionGe_mi_Sipari_lerim"/>
+   </widget>
+   <addaction name="menuSipari_lerim"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionGe_mi_Sipari_lerim">
+   <property name="text">
+    <string>Geçmiş Siparişlerim</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>

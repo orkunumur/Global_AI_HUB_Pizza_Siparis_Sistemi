@@ -36,8 +36,11 @@ class MainPage(QMainWindow):
         self.ui.setupUi(self)
         #self.pizza_ad_cheB()
         #self.veri_ekle({'pizza': 'margarita Pizza', 'malzeme': 'zeytin, et, mantar', 'fiyat': 87})
-        self.ui.sepete_ekle.clicked.connect(self.pizza_tuple)
-        
+        #self.ui.sepete_ekle_button.clicked.connect()
+        self.ui.klas_pizza_check.stateChanged.connect(self.checkBox_secim)
+        self.ui.Mar_pizza_check.stateChanged.connect(self.checkBox_secim)
+        self.ui.turk_pizza_check.stateChanged.connect(self.checkBox_secim)
+        self.ui.s_pizza_check.stateChanged.connect(self.checkBox_secim)
 
     #def sepete_ekle(self):
 
@@ -45,17 +48,24 @@ class MainPage(QMainWindow):
         s_pi= sade_pizza()
         t_pi= Turk_pizza()
         m_pi= margarita_pizza()
-        kl_pi = klasik_pizza()
-        check_box =[[self.ui.klas_pizza_check ,self.ui.klas_pizza_check.isChecked()],
-                    [self.ui.Mar_pizza_check ,self.ui.Mar_pizza_check.isChecked()], 
-                    [self.ui.turk_pizza_check, self.ui.turk_pizza_check.isChecked()],
-                    [self.ui.s_pizza_check ,self.ui.s_pizza_check.isChecked()]]
+        kl_pi = klasik_pizza()        
         pizzalar_tuple = [
             (kl_pi.description, kl_pi.cost, self.ui.klas_pizza_check.isChecked()),
             (m_pi.description, m_pi.cost, self.ui.Mar_pizza_check.isChecked()),
             (t_pi.description, t_pi.cost, self.ui.turk_pizza_check.isChecked()),
             (s_pi.description, s_pi.cost, self.ui.s_pizza_check.isChecked())
         ]
+        return print(pizzalar_tuple)
+    
+
+    def checkBox_secim(self):
+        check_box =[
+            [self.ui.klas_pizza_check ,self.ui.klas_pizza_check.isChecked()],
+            [self.ui.Mar_pizza_check ,self.ui.Mar_pizza_check.isChecked()], 
+            [self.ui.turk_pizza_check, self.ui.turk_pizza_check.isChecked()],
+            [self.ui.s_pizza_check ,self.ui.s_pizza_check.isChecked()]
+                ]
+        
         for checkbox in check_box:
             if checkbox[1]:
                 for other_checkbox in check_box:
@@ -67,22 +77,7 @@ class MainPage(QMainWindow):
                 for other_checkbox in check_box:
                     if other_checkbox[0] != checkbox[0]:
                         other_checkbox[0].setEnabled(True)
-
-    
-                     
-        return print(pizzalar_tuple)
-        
-
-
-
-
-
-    def pizza_ad_cheB(self):
-        check_box= [self.ui.checkBox_1, self.ui.checkBox_2, self.ui.checkBox_3, self.ui.checkBox_4,]
-        liste= ["KlasikPizza", "MargaritaPizza",  "TürkPizza", "SadePizza"]
-        for index, eleman in enumerate(check_box):
-            eleman.setText(liste[index])
-
+     
 
     def veri_ekle(self, veriler):  
         table_widget = self.ui.sepet_table
