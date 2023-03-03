@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1222</width>
-    <height>570</height>
+    <width>1389</width>
+    <height>573</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,7 +19,7 @@
      <rect>
       <x>480</x>
       <y>280</y>
-      <width>731</width>
+      <width>881</width>
       <height>231</height>
      </rect>
     </property>
@@ -39,7 +39,7 @@
      <bool>false</bool>
     </property>
     <property name="columnCount">
-     <number>4</number>
+     <number>7</number>
     </property>
     <column>
      <property name="text">
@@ -48,12 +48,27 @@
     </column>
     <column>
      <property name="text">
-      <string>Malzeme</string>
+      <string>Malzemeler</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Soslar</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>İçecekler</string>
      </property>
     </column>
     <column>
      <property name="text">
       <string>Tutar</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Not</string>
      </property>
     </column>
     <column>
@@ -68,7 +83,7 @@
       <x>10</x>
       <y>10</y>
       <width>461</width>
-      <height>501</height>
+      <height>511</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -342,7 +357,7 @@
       <rect>
        <x>0</x>
        <y>100</y>
-       <width>111</width>
+       <width>114</width>
        <height>191</height>
       </rect>
      </property>
@@ -449,94 +464,7 @@
     <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
-       <x>310</x>
-       <y>100</y>
-       <width>71</width>
-       <height>181</height>
-      </rect>
-     </property>
-     <layout class="QVBoxLayout" name="verticalLayout_3">
-      <item>
-       <widget class="QLabel" name="label">
-        <property name="font">
-         <font>
-          <pointsize>10</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>Kola</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLabel" name="label_2">
-        <property name="font">
-         <font>
-          <pointsize>10</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>Fanta</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLabel" name="label_3">
-        <property name="font">
-         <font>
-          <pointsize>10</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>Gazoz</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLabel" name="label_4">
-        <property name="font">
-         <font>
-          <pointsize>10</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>Limonata</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLabel" name="label_5">
-        <property name="font">
-         <font>
-          <pointsize>10</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>Ayran</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </widget>
-    <widget class="QWidget" name="layoutWidget">
-     <property name="geometry">
-      <rect>
-       <x>380</x>
+       <x>400</x>
        <y>100</y>
        <width>51</width>
        <height>191</height>
@@ -596,7 +524,7 @@
        <x>250</x>
        <y>100</y>
        <width>51</width>
-       <height>191</height>
+       <height>199</height>
       </rect>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout_7">
@@ -656,13 +584,85 @@
       </item>
      </layout>
     </widget>
+    <widget class="QWidget" name="layoutWidget_3">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>100</y>
+       <width>91</width>
+       <height>191</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_5">
+      <item>
+       <widget class="QCheckBox" name="kola_check">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Kola</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="fanta_check">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Fanta</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="gazoz_check">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Gazoz</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="limonata_check">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Limonata</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="ayran_check">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Ayran</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
    </widget>
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>480</x>
       <y>230</y>
-      <width>731</width>
+      <width>881</width>
       <height>41</height>
      </rect>
     </property>
@@ -713,7 +713,7 @@
      <rect>
       <x>480</x>
       <y>10</y>
-      <width>731</width>
+      <width>881</width>
       <height>211</height>
      </rect>
     </property>
@@ -730,7 +730,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1222</width>
+     <width>1389</width>
      <height>21</height>
     </rect>
    </property>
