@@ -36,14 +36,17 @@ class MainPage(QMainWindow):
         self.ui.setupUi(self)
         #self.pizza_ad_cheB()
         #self.veri_ekle({'pizza': 'margarita Pizza', 'malzeme': 'zeytin, et, mantar', 'fiyat': 87})
-        #self.ui.sepete_ekle_button.clicked.connect()
+        self.ui.sepete_ekle_button.clicked.connect(self.sepete_ekle)
         self.ui.klas_pizza_check.stateChanged.connect(self.checkBox_secim)
         self.ui.Mar_pizza_check.stateChanged.connect(self.checkBox_secim)
         self.ui.turk_pizza_check.stateChanged.connect(self.checkBox_secim)
         self.ui.s_pizza_check.stateChanged.connect(self.checkBox_secim)
+        self.siparis=[]
 
-    #def sepete_ekle(self):
-
+    def sepete_ekle(self):
+        a=self.pizza_secim(self.pizza_tuple())
+        return print(a)
+    
     def pizza_tuple(self):
         s_pi= sade_pizza()
         t_pi= Turk_pizza()
@@ -55,8 +58,32 @@ class MainPage(QMainWindow):
             (t_pi.description, t_pi.cost, self.ui.turk_pizza_check.isChecked()),
             (s_pi.description, s_pi.cost, self.ui.s_pizza_check.isChecked())
         ]
-        return print(pizzalar_tuple)
+        return pizzalar_tuple
     
+
+    def pizza_secim(self, pizza_listesi):
+        for eleman in pizza_listesi:
+            if eleman[2] == True:
+                self.siparis.append(eleman[0:2])
+        return self.siparis
+
+    def malzeme_secimi(self, malzeme_listesi):
+        for eleman in malzeme_listesi:
+            if eleman[2] == True:
+                self.siparis.append(eleman[0:2])
+        return self.siparis
+
+    def sozluk_olustur(siparis_listesi):
+        sepet_ekle = {"pizza": "", "malzeme": "", "fiyat": 0}
+        for veri in siparis_listesi:
+            if "Pizza" in veri[0]:
+                sepet_ekle['pizza'] = veri[0]
+            else:
+                if sepet_ekle["malzeme"] != "":
+                    sepet_ekle["malzeme"] += ", "
+                sepet_ekle["malzeme"] += veri[0]
+            sepet_ekle["fiyat"] += veri[1]
+        return sepet_ekle
 
     def checkBox_secim(self):
         check_box =[
